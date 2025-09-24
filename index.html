@@ -1,12 +1,66 @@
-/* Here in the  we will have the skeleton/ structure of my website"*/
+<!-- Skeleton/structure of my website -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henny Guiesso - Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
+    <title>Henny Guiesso - Full-Stack Developer & Computer Science Student</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Henny Guiesso - Computer Science student and Full-Stack Developer specializing in Python, Java, React.js, AWS, and data analytics. View my projects and get in touch!">
+    <meta name="keywords" content="Henny Guiesso, Full-Stack Developer, Computer Science, Python, Java, React.js, AWS, Data Analytics, Portfolio, Web Developer">
+    <meta name="author" content="Henny Guiesso">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://henny225.github.io/">
+    <meta property="og:title" content="Henny Guiesso - Full-Stack Developer & Computer Science Student">
+    <meta property="og:description" content="Computer Science student and Full-Stack Developer specializing in Python, Java, React.js, AWS, and data analytics. View my projects and get in touch!">
+    <meta property="og:image" content="https://henny225.github.io/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://henny225.github.io/">
+    <meta property="twitter:title" content="Henny Guiesso - Full-Stack Developer & Computer Science Student">
+    <meta property="twitter:description" content="Computer Science student and Full-Stack Developer specializing in Python, Java, React.js, AWS, and data analytics. View my projects and get in touch!">
+    <meta property="twitter:image" content="https://henny225.github.io/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Fonts and Styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Henny Guiesso",
+        "jobTitle": "Full-Stack Developer & Computer Science Student",
+        "description": "Computer Science student and Full-Stack Developer specializing in Python, Java, React.js, AWS, and data analytics.",
+        "url": "https://henny225.github.io/",
+        "sameAs": [
+            "https://github.com/Henny225",
+            "https://linkedin.com/in/henny-guiesso"
+        ],
+        "email": "Hennyguiesso@gmail.com",
+        "knowsAbout": [
+            "Python", "Java", "C", "JavaScript", "HTML", "CSS", "React.js", 
+            "Android Development", "AWS", "SQL", "Tableau", "Data Visualization", 
+            "Algorithms", "Figma", "Git"
+        ],
+        "alumniOf": "Computer Science Program"
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -17,23 +71,25 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="resume.html" target="_blank" class="resume-link">Resume</a></li>
             </ul>
         </div>
     </nav>
     
 
-    <section class="hero" id="home">
+    <section class="hero" id="home" role="banner">
         <div class="hero-content">
             <div class="hero-badge">Computer Science Student</div>
             <h1>Hi, I'm <span class="gradient-text">Henny</span><br>Full-Stack Developer</h1>
-            <p>I’m currently focused on building my computer science and cloud engineering skills, while also expanding my knowledge in Python, Java, C, AWS, and Figma.</p>
+            <p>I'm currently focused on building my computer science and cloud engineering skills, while also expanding my knowledge in Python, Java, C, AWS, and Figma.</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i> View My Work
+                <a href="#projects" class="btn btn-primary" aria-label="View my projects and work">
+                    <i class="fas fa-rocket" aria-hidden="true"></i> View My Work
                 </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i> Get In Touch
+                <a href="#contact" class="btn btn-secondary" aria-label="Get in touch with me">
+                    <i class="fas fa-envelope" aria-hidden="true"></i> Get In Touch
                 </a>
             </div>
     
@@ -52,16 +108,94 @@
             <h2>My Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
+                    <h3>Afrique Hub</h3>
+                    <p class="project-desc">Community website for West Africans in the U.S. with event RSVPs, networking opportunities, dark mode, and interactive forms with dynamic participant counters.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="#" aria-label="Afrique Hub source code"><i class="fab fa-github"></i> Code</a>
+                        <a class="project-link demo" href="https://hickory-saving-suit-200.vscodeedu.app" target="_blank" rel="noopener" aria-label="Afrique Hub live demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Volleyball Team Management System</h3>
+                    <p class="project-desc">Data-driven analytics system implementing Maximum Subarray and LCS algorithms with performance charts, skill radar displays, and streak analysis for coaches and players.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Data Visualization</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="https://github.com/Henny225/Implementation-of-Volleyball-Player-Evaluation-System" aria-label="Volleyball System source code"><i class="fab fa-github"></i> Code</a>
+                        <a class="project-link demo" href="https://github.com/Henny225/Implementation-of-Volleyball-Player-Evaluation-System" target="_blank" rel="noopener" aria-label="Volleyball System live demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>LastBite Group Restaurant App</h3>
+                    <p class="project-desc">Android app integrating Google Maps and Places APIs for location-based restaurant selection with interactive multi-player decision game and swipe-to-veto feature.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Android</span>
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Google Maps API</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="#" aria-label="LastBite App source code"><i class="fab fa-github"></i> Code</a>
+                        <a class="project-link demo" href="#" target="_blank" rel="noopener" aria-label="LastBite App live demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
                     <h3>Portfolio Website</h3>
-                    <p>A modern portfolio built with HTML, CSS, and JavaScript.</p>
+                    <p class="project-desc">A modern portfolio built with semantic HTML, responsive CSS Grid, and smooth JS interactions with keyboard navigation.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="#" aria-label="Portfolio source code"><i class="fab fa-github"></i> Code</a>
+                        <a class="project-link demo" href="#" target="_blank" rel="noopener" aria-label="Portfolio live demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Data Dashboard</h3>
-                    <p>Interactive analytics dashboard using Python, SQL, and Tableau.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML/CSS</span>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Cloud Deployment</h3>
-                    <p>Deployed full-stack app on AWS with CI/CD pipeline.</p>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">React.js</span>
+                        <span class="skill-item">Android Studio</span>
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">Tableau</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data & Analytics</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Data Visualization</span>
+                        <span class="skill-item">Excel</span>
+                        <span class="skill-item">Algorithms</span>
+                        <span class="skill-item">Figma</span>
+                        <span class="skill-item">Git</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,71 +203,33 @@
 
     <section class="contact" id="contact">
         <div class="section-container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:Hennyguiesso@gmail.com" style="color: #00d4ff; text-decoration: none;">Hennyguiesso@gmail.com</a></p>
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in new opportunities and exciting projects!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:Hennyguiesso@gmail.com">Hennyguiesso@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Henny225" target="_blank" rel="noopener">github.com/Henny225</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/hennyguiesso" target="_blank" rel="noopener">linkedin.com/in/hennyguiesso</a>
+                    </div>
+                </div>
+                <div class="resume-download">
+                    <a href="resume.html" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-file-alt"></i> View Resume
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <script>
-        
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Keyboard navigation (your favorite feature!)
-    let currentSection = 0;
-    const sections = ['home', 'about', 'projects', 'contact'];
-    // Track if the page is currently scrolling
-let isScrolling = false;
-
-function scrollToSection(index) {
-    if (isScrolling) return; // prevent multiple rapid scrolls
-    isScrolling = true;
-    
-    document.getElementById(sections[index]).scrollIntoView({
-        behavior: 'smooth'
-    });
-
-    // Wait for the scroll to finish (approximation)
-    setTimeout(() => {
-        isScrolling = false;
-        currentSection = index;
-    }, 500); // 500ms matches typical smooth scroll duration
-}
-
-
-    document.addEventListener('keydown', function(event) {
-        switch(event.key) {
-            case 'ArrowRight':
-            case 'ArrowDown':
-                event.preventDefault();
-                currentSection = (currentSection + 1) % sections.length;
-                document.getElementById(sections[currentSection]).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                break;
-                
-            case 'ArrowLeft':
-            case 'ArrowUp':
-                event.preventDefault();
-                currentSection = (currentSection - 1 + sections.length) % sections.length;
-                document.getElementById(sections[currentSection]).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                break;
-        }
-    });
-</script>
+    <script src="script.js"></script>
 
 </body>
 </html>
