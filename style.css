@@ -87,7 +87,20 @@ body {
     color: #00d4ff;
     font-size: 0.9rem;
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: linear-gradient(135deg, #7c3aed, #00d4ff);
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
 }
 
 .hero h1 {
@@ -443,4 +456,23 @@ body {
         flex-wrap: wrap;
         gap: 1rem;
     }
+}
+
+/* Footer */
+.footer {
+    background: #0f0f23;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-content p:first-child {
+    font-weight: 600;
+    color: #00d4ff;
 }
